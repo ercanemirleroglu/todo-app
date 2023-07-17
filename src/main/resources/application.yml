@@ -4,9 +4,9 @@ server:
     context-path: /todo-list
 spring:
   datasource:
-    url: "jdbc:postgresql://localhost:5432/todo"
+    url: "jdbc:postgresql://containers-us-west-131.railway.app:5533/railway"
     username: postgres
-    password: 123456
+    password: 4DE4R6qkxWYznNgb1SAy
     driverClassName: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQL10Dialect
