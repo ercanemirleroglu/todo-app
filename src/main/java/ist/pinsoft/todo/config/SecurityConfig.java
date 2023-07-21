@@ -27,7 +27,7 @@ public class SecurityConfig {
                 )
                 .httpBasic(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
-                .cors(AbstractHttpConfigurer::disable);
+                .cors(c -> c.configurationSource(corsConfigurationSource()));
         return http.build();
     }
 
